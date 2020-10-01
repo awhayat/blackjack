@@ -4,6 +4,8 @@
 
 ![screenshot](https://github.com/awhayat/blackjack/blob/master/screenshot.PNG)
 
-This game written in Java pits you against a programmed Dealer in a text-based casino. Follow the on-screen instructions to specify your starting balance, place a bet for each round, and either hit or stand. Can you maximize your profits?
+This tex-based game pits you against a programmed Dealer in a virtual casino. Follow the on-screen instructions to specify your starting balance, place a bet for each round, and either hit or stand. Naming yourself after a certain Harry Potter nickname may lead to easy profits!
 
-Naming yourself after a certain Harry Potter nickname may lead to an extra-fun time!
+#### Future updates:
+- add multiplayer option with a second Player object
+- add JUnit tests
