@@ -28,7 +28,7 @@ public abstract class BlackJack {
     }
     
     public BlackJack() {
-        this.hand = new ArrayList();
+        this.hand = new ArrayList<>();
     }
     
     public void move(BlackJack player, boolean cheat) {}

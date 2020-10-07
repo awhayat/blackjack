@@ -17,7 +17,7 @@ public class GameRunner {
                 + "Good Luck!\n");
         
         
-        BlackJack.deck = new ArrayList();
+        BlackJack.deck = new ArrayList<>();
         BlackJack.refreshDeck();
         
         BlackJack dealer = new Dealer();
