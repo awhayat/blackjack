@@ -1,20 +1,27 @@
-package blackjack;
-import java.util.*;
+package ui;
 
-public class GameRunner {
-    
-    static Scanner input = new Scanner(System.in);
+import model.BlackJack;
+import model.Dealer;
+import model.Player;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static Scanner input = new Scanner(System.in);
     
     public static void main(String[] args) {
         System.out.println("Welcome to the casino!");
-        System.out.println("The objective of Blackjack is to beat the dealer.\n"
-                + "The player whose hand's score is closest to 21 wins.\n"
-                + "But watch out, because if you go over 21 you bust.\n"
-                + "In the event of a tie, the dealer wins.\n"
-                + "Cards from 2-10 have a value equal to their number.\n"
-                + "All face cards have a value of 10.\n"
-                + "Aces have a value of 11 or 1, depending on which one maximizes your score without going over 21 (The game will automatically do this).\n"
-                + "Good Luck!\n");
+        System.out.println("""
+                The objective of Blackjack is to beat the dealer.
+                The player whose hand's score is closest to 21 wins.
+                But watch out, because if you go over 21 you bust.
+                In the event of a tie, the dealer wins.
+                Cards from 2-10 have a value equal to their number.
+                All face cards have a value of 10.
+                Aces have a value of 11 or 1, depending on which one maximizes your score without going over 21 (The game will automatically do this).
+                Good Luck!
+                """);
         
         
         BlackJack.deck = new ArrayList<>();

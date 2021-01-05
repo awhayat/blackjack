@@ -1,5 +1,6 @@
-package blackjack;
-import static blackjack.GameRunner.input;
+package model;
+
+import static ui.Main.input;
 
 public class Player extends BlackJack {
     

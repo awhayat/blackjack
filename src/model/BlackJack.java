@@ -1,5 +1,6 @@
-package blackjack;
-import java.util.*;
+package model;
+
+import java.util.ArrayList;
 
 public abstract class BlackJack {
     
@@ -31,7 +32,7 @@ public abstract class BlackJack {
         this.hand = new ArrayList<>();
     }
     
-    public void move(BlackJack player, boolean cheat) {}
+    public abstract void move(BlackJack player, boolean cheat);
     
     public final void hit(boolean initial) {
         int i = (int) (Math.random() * BlackJack.deck.size());
@@ -79,8 +80,7 @@ public abstract class BlackJack {
         
         if (score1 > 21) return false;
         else if (score2 > 21) return true;
-        else if (score1 > score2) return true;
-        return false;
+        else return score1 > score2;
     }
 
 }
