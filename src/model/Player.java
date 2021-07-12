@@ -15,11 +15,16 @@ public class Player extends BlackJack {
         do {
             System.out.println("\nType 1 to hit or 2 to stand.");
             move = input.nextInt();
-            if ((move != 1) && (move != 2)) System.out.println("Invalid move.");
+            if ((move != 1) && (move != 2)) {
+                System.out.println("Invalid move.");
+            }
         } while ((move != 1) && (move != 2));
             
-        if (move == 1) this.hit(false);
-        else this.stand();
+        if (move == 1) {
+            this.hit(false);
+        } else {
+            this.stand();
+        }
     }
     
     public void stand() {

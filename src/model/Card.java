@@ -5,7 +5,7 @@ public class Card {
     public int value;
     
     public String toString() {
-        return this.name;
+        return name;
     }
     
     public Card(String name) {

@@ -25,11 +25,11 @@ public abstract class BlackJack {
     public int balance;
     
     public String toString() {
-        return this.name;
+        return name;
     }
     
     public BlackJack() {
-        this.hand = new ArrayList<>();
+        hand = new ArrayList<>();
     }
     
     public abstract void move(BlackJack player, boolean cheat);
@@ -56,19 +56,26 @@ public abstract class BlackJack {
             for (Card card : this.hand.subList(1, this.hand.size())) {
                 if (!card.name.equals("Ace")) {
                     points += card.value;
-                } else aces++;
+                } else {
+                    aces++;
+                }
             }
         } else {
             for (Card card : this.hand) {
                 if (!card.name.equals("Ace")) {
                     points += card.value;
-                } else aces++;
+                } else {
+                    aces++;
+                }
             }
         }
         
         for (int i = 0; i < aces; i++) {
-            if (points < 11) points += 11;
-            else points += 1;
+            if (points < 11) {
+                points += 11;
+            } else {
+                points += 1;
+            }
         }
         
         return points;
@@ -78,9 +85,13 @@ public abstract class BlackJack {
         int score1 = this.score(false);
         int score2 = other.score(false);
         
-        if (score1 > 21) return false;
-        else if (score2 > 21) return true;
-        else return score1 > score2;
+        if (score1 > 21) {
+            return false;
+        } else if (score2 > 21) {
+            return true;
+        } else {
+            return score1 > score2;
+        }
     }
 
 }

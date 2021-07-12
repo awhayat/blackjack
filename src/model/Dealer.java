@@ -4,13 +4,14 @@ public class Dealer extends BlackJack {
     
     public Dealer() {
         super();
-        this.name = "Dealer";
-        this.balance = 0;
+        name = "Dealer";
+        balance = 0;
     }
     
     public void move(BlackJack player, boolean cheat) {
-        if (cheat) this.hit(false);
-        else {
+        if (cheat) {
+            this.hit(false);
+        } else {
             int playerScore = player.score(true);
             int dealerScore = this.score(false);
 
